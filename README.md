@@ -10,8 +10,9 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+OR 
 
-Check vercel app: https://my-swap-frontend.vercel.app/
+Check out vercel app: https://my-swap-frontend.vercel.app/
 
 Contracts deployed to Polygon Mumbai Testnet (chainId: 80001)
 
