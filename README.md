@@ -18,3 +18,5 @@ Check vercel app https://my-swap-frontend.vercel.app/
 WETH and couple own random tokens hardcoded. 
 
 This is the biggest project I have done so far. I did not follow any tutorial so apologies for not always following best practices with react.
+
+Not optimized for mobile.
