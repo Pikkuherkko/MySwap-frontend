@@ -1,0 +1,22 @@
+const tokenlist = [
+  {
+    name: "Ree",
+    symbol: "REE",
+    decimals: 18,
+    address: "0x5fc349d04CBBa2Fe0446B8c2e3b28b0e52d345c4",
+  },
+  {
+    name: "Lee",
+    symbol: "LEE",
+    decimals: 18,
+    address: "0x25d68Ad1ACc589260DbF8B90c038462260F059F5",
+  },
+  {
+    name: "Wrapped Ether",
+    symbol: "WETH",
+    decimals: 18,
+    address: "0x140b09e9BF71AA0Cc0973e836E83F1A7a4EC7F75",
+  },
+];
+
+export default tokenlist;
