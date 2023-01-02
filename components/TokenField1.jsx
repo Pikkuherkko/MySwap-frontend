@@ -42,14 +42,14 @@ const TokenField1 = (props) => {
         />
       </div>
       <div className="flex flex-col mr-2">
-        <span className="text-xl font-semibold inline ">
+        <span className="text-xl font-semibold inline text-end">
           <select
             onChange={(event) => props.setToken1(tokenlist[event.target.value])}
             className="bg-transparent text-end"
           >
             {tokenlist.map((token, idx) => (
               <option key={idx} value={idx} className="">
-                {token.name}
+                {token.symbol}
               </option>
             ))}
           </select>
