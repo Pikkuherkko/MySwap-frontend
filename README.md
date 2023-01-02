@@ -12,7 +12,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 OR 
 
-Check out vercel app: https://my-swap-frontend.vercel.app/
+Check out vercel app: https://my-swap-frontend-3iny6sgj9-pikkuherkko.vercel.app/
 
 Contracts deployed to Polygon Mumbai Testnet (chainId: 80001)
 
@@ -25,4 +25,4 @@ This is the biggest project I have done so far. I did not follow any tutorial so
 
 The basic structure is the same as in Uniswap V2. Add/remove liquidity for tokens and ETH, and swap them. 
 
-Not optimized for mobile.
+
