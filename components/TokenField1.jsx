@@ -29,8 +29,6 @@ const TokenField1 = (props) => {
     loadTokens();
   }, []);
 
-  console.log("tokenlist", tokenList);
-
   return (
     <div className="bg-red-100 flex flex-row mt-4 rounded-xl p-2 justify-between font-kanit">
       <div className="mt-2 ">
@@ -44,11 +42,15 @@ const TokenField1 = (props) => {
       <div className="flex flex-col mr-2">
         <span className="text-xl font-semibold inline text-end">
           <select
-            onChange={(event) => props.setToken1(tokenlist[event.target.value])}
+            onChange={(event) =>
+              props.setToken1(
+                tokenlist.find((token) => token.name === event.target.value)
+              )
+            }
             className="bg-transparent text-end"
           >
-            {tokenlist.map((token, idx) => (
-              <option key={idx} value={idx} className="">
+            {tokenList.map((token, idx) => (
+              <option key={idx} value={token.name} className="">
                 {token.symbol}
               </option>
             ))}
