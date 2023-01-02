@@ -38,11 +38,13 @@ export default function NavBar() {
 
   return (
     <div className="relative">
-      <div className="flex flex-row justify-between p-2">
+      <div className="flex sm:flex-row flex-col sm:justify-between justify-center items-center p-2">
         <div>
-          <h1 className={`mt-2 ml-4 text-3xl text-white font-rubik`}>MySwap</h1>
+          <h1 className="mt-2 ml-4 text-3xl text-white font-rubik sm:mb-0 mb-4">
+            MySwap
+          </h1>
         </div>
-        <div className="flex flex-row bg-red-600 rounded-2xl pt-2 text-white px-8 shadow-2xl font-kanit">
+        <div className="flex flex-row bg-red-600 rounded-2xl p-2 text-white px-8 shadow-2xl font-kanit w-fit sm:mb-0 mb-2">
           <Link href="/" className="mr-2 hover:text-black font-semibold">
             Swap
           </Link>

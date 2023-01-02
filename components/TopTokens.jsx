@@ -102,7 +102,7 @@ const TopTokens = () => {
       <h1 className="text-white text-3xl font-bold mb-4 bg-cyan-900 rounded-full p-3 bg-opacity-70">
         Token analytics
       </h1>
-      <div className="flex flex-col justify-between bg-cyan-900 p-4 px-12 rounded-xl md:w-1/2 w-fit">
+      <div className="flex flex-col justify-between bg-cyan-900 p-4 sm:px-12 rounded-xl lg:w-1/2 w-[90%]">
         <div className="flex flex-row text-center text-white font-bold mb-2">
           <div className="basis-1/4">Token name</div>
           <div className="basis-1/4">Price</div>
@@ -118,7 +118,7 @@ const TopTokens = () => {
                 idx !== tokenlist.length - 1 ? "mb-8" : "mb-0"
               }`}
             >
-              <div className="basis-1/4 text-lg font-semibold font-rubik">
+              <div className="basis-1/4 sm:text-lg text-sm font-semibold font-rubik">
                 {a.name}
               </div>
               <div className="basis-1/4">{prices[idx]} ETH</div>
