@@ -6,7 +6,7 @@ const AddNewToken = () => {
   const [name, setName] = useState(undefined);
   const [symbol, setSymbol] = useState(undefined);
   const [address, setAddress] = useState(undefined);
-  const [isHidden, setIsHidden] = useState(false);
+  const [isHidden, setIsHidden] = useState(true);
   const [springs] = useSpring(() => ({
     from: { y: 100, x: -100, opacity: 0 },
     to: {
@@ -59,13 +59,13 @@ const AddNewToken = () => {
               className="text-white font-kanit"
               onClick={() => setIsHidden(!isHidden)}
             >
-              Open
+              {isHidden ? "Open" : "Close"}
             </button>
           </div>
 
           <div
             className={`flex flex-col font-kanit text-white text-sm sm:text-lg ${
-              isHidden ? "hidden" : "flex justify-center "
+              isHidden ? "hidden" : "flex justify-center"
             }`}
           >
             <div className="flex flex-row mb-2 ">
@@ -82,7 +82,7 @@ const AddNewToken = () => {
               </h2>
               <input
                 type="text"
-                className="text-black w-40 rounded-xl p-2 flex items-center outline-none basis-1/2"
+                className="text-black text-sm w-40 rounded-xl p-2 flex items-center outline-none basis-1/2"
                 onChange={(e) => setSymbol(e.target.value)}
               />
             </div>
@@ -92,7 +92,7 @@ const AddNewToken = () => {
               </h2>
               <input
                 type="text"
-                className="text-black w-40 rounded-xl p-2 flex items-center outline-none basis-1/2"
+                className="text-black text-sm w-40 rounded-xl p-2 flex items-center outline-none basis-1/2"
                 onChange={(e) => setAddress(e.target.value)}
               />
             </div>
