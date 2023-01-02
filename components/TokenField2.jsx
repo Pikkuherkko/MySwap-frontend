@@ -2,6 +2,8 @@ import React from "react";
 import tokenlist from "./constants/tokenlist";
 
 const TokenField2 = (props) => {
+  const tokenlistModified = tokenlist.slice(1);
+  tokenlistModified.splice(tokenlist.length, 0, tokenlist[0]);
   return (
     <div className="bg-red-100 flex flex-row mt-4 rounded-xl p-2 justify-between font-kanit">
       <div className="mt-2">
@@ -21,11 +23,13 @@ const TokenField2 = (props) => {
         <span className="text-xl font-semibold inline text-end">
           <select
             onChange={(event) => props.setToken2(tokenlist[event.target.value])}
-            className="bg-transparent"
+            className="bg-transparent text-end"
           >
-            <option value="1">LEE</option>
-            <option value="0">REE</option>
-            <option value="2">ETH</option>
+            {tokenlistModified.map((token) => (
+              <option key={token.name} value={token.name}>
+                {token.symbol}
+              </option>
+            ))}
           </select>
         </span>
         <div className="flex flex-row">
