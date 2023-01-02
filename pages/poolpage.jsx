@@ -7,9 +7,9 @@ export default function MySwap() {
   const { isWeb3Enabled } = useMoralis();
 
   return (
-    <div className="sm:bg-eth sm:bg-cover bg-black w-full ">
+    <div className="sm:bg-eth sm:bg-cover bg-black bg-scroll overflow-auto">
       <div className="bg-black w-[40%] h-[60%] top-60 right-[5%] blur-[100px] rounded-full absolute z-[0] object-cover"></div>
-      <div className="flex flex-col justify-between h-screen">
+      <div className="flex flex-col justify-between h-screen lg:mx-0 mx-4">
         <NavBar />
         {isWeb3Enabled ? (
           <>

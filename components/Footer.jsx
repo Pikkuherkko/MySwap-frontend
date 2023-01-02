@@ -6,8 +6,8 @@ import { links } from "./constants/links";
 import { socialMedia } from "./constants";
 
 const Footer = () => (
-  <section className="font-kanit flex flex-col">
-    <div className=" flex flex-row">
+  <section className="font-kanit flex flex-col sm:mt-0 mt-4">
+    <div className="flex sm:flex-row flex-col">
       <div className="ml-12 basis-1/3 flex flex-col justify-end mb-4">
         <div className="flex flex-row items-center">
           <p className="text-slate-300 text-xs ">
@@ -37,7 +37,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="flex flex-row justify-between items-center mx-12 border-t-[1px] p-2">
-      <p className="text-slate-300 font-semibold font-rubik">
+      <p className="text-slate-300 font-semibold font-rubik sm:text-base text-sm">
         2022 Pikkuherkko
       </p>
       <div className="flex flex-row">

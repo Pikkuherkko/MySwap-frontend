@@ -356,9 +356,13 @@ const AddPool = () => {
     loadLiq();
   }, [token1, token2]);
 
+  console.log(token1, token2);
+  console.log(tokenlist);
+  // console.log(tokenlist.find((token) => token.name === "Ree"));
+
   return (
     <animated.div
-      className="flex flex-col items-center sm:mt-16 font-kanit"
+      className="flex flex-col items-center sm:mt-16 mt-6 font-kanit"
       style={springs}
     >
       <div className="flex md:flex-row flex-col justify-around align-top shadow-2xl">
@@ -379,13 +383,17 @@ const AddPool = () => {
                   <div className="mr-2 flex items-center font-semibold">
                     <select
                       onChange={(event) =>
-                        setToken1(tokenlist[event.target.value])
+                        setToken1(
+                          tokenlist.find(
+                            (token) => token.name === event.target.value
+                          )
+                        )
                       }
                       className="bg-transparent align-middle"
                     >
-                      <option value="0">REE</option>
-                      <option value="1">LEE</option>
-                      <option value="2">ETH</option>
+                      {tokenlist.map((token) => (
+                        <option value={token.name}>{token.symbol}</option>
+                      ))}
                     </select>
                   </div>
                   <input
@@ -398,13 +406,17 @@ const AddPool = () => {
                   <div className="flex items-center mr-2 font-semibold">
                     <select
                       onChange={(event) =>
-                        setToken2(tokenlist[event.target.value])
+                        setToken2(
+                          tokenlist.find(
+                            (token) => token.name === event.target.value
+                          )
+                        )
                       }
                       className="bg-transparent"
                     >
-                      <option value="1">LEE</option>
-                      <option value="0">REE</option>
-                      <option value="2">ETH</option>
+                      {tokenlist.map((token) => (
+                        <option value={token.name}>{token.symbol}</option>
+                      ))}
                     </select>
                   </div>
                   <div className="bg-white rounded-2xl p-2 w-20 sm:w-44">

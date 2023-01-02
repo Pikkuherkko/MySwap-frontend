@@ -42,7 +42,7 @@ const Swap = () => {
     from: { x: -300, y: -400, opacity: 0 },
     enter: (item) => async (next) => {
       await next({ y: 0, x: 0, opacity: 0.2 });
-      await next({ y: 0, x: 0, opacity: 1 });
+      await next({ y: -50, x: 0, opacity: 1 });
     },
     leave: { x: -300, y: -400, opacity: 0 },
   });
@@ -241,7 +241,7 @@ const Swap = () => {
   return (
     <div className="flex justify-center relative">
       <animated.div
-        className="bg-red-600 p-4 rounded-2xl lg:right-72 w-96 relative"
+        className="bg-red-600 p-4 rounded-2xl sm:w-96 w-96 relative mt-4 sm:mt-0"
         style={springs}
       >
         <div className="flex flex-row justify-between">
@@ -293,7 +293,7 @@ const Swap = () => {
           )}
 
           <button
-            className="bg-white mt-2 rounded-xl py-1 hover:bg-black hover:text-white font-kanit"
+            className="bg-white mt-2 rounded-2xl py-2 hover:bg-black hover:text-white font-kanit"
             onClick={() => swap()}
           >
             Swap
