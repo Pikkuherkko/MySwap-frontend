@@ -392,7 +392,9 @@ const AddPool = () => {
                       className="bg-transparent align-middle"
                     >
                       {tokenlist.map((token) => (
-                        <option value={token.name}>{token.symbol}</option>
+                        <option key={token.name} value={token.name}>
+                          {token.symbol}
+                        </option>
                       ))}
                     </select>
                   </div>
@@ -415,7 +417,9 @@ const AddPool = () => {
                       className="bg-transparent"
                     >
                       {tokenlist.map((token) => (
-                        <option value={token.name}>{token.symbol}</option>
+                        <option key={token.name} value={token.name}>
+                          {token.symbol}
+                        </option>
                       ))}
                     </select>
                   </div>
