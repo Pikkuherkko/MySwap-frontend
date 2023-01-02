@@ -52,9 +52,6 @@ const TokenField1 = (props) => {
                 {token.name}
               </option>
             ))}
-            {/* <option value="0">REE</option>
-            <option value="1">LEE</option>
-            <option value="2">ETH</option> */}
           </select>
         </span>
         <div className="flex flex-row justify-end">
