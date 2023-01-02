@@ -22,7 +22,11 @@ const TokenField2 = (props) => {
       <div className="flex flex-col mr-2">
         <span className="text-xl font-semibold inline text-end">
           <select
-            onChange={(event) => props.setToken2(tokenlist[event.target.value])}
+            onChange={(event) =>
+              props.setToken2(
+                tokenlist.find((token) => token.name === event.target.value)
+              )
+            }
             className="bg-transparent text-end"
           >
             {tokenlistModified.map((token) => (

@@ -238,6 +238,8 @@ const Swap = () => {
     loadPage();
   }, [token1, token2]);
 
+  console.log(token1, token2);
+
   return (
     <div className="flex justify-center relative">
       <animated.div
