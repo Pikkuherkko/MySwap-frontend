@@ -21,7 +21,6 @@ Contracts deployed to Polygon Mumbai Testnet (chainId: 80001)
 
 WETH and couple own random tokens hardcoded. 
 
-This is the biggest project I have done so far. I did not follow any tutorial so apologies for not always following best practices with react.
 
 The basic structure is the same as in Uniswap V2. Add/remove liquidity for tokens and ETH, and swap them. 
 
